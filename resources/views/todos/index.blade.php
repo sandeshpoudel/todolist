@@ -5,8 +5,9 @@
 @foreach ($todos as $todo )
 <div class="well">
 <h3><a href="/todo/{{$todo->id}}">{{$todo->text}}</a><span class= "label label-danger">{{$todo->due}}</span></h3>
-
 </div>
 @endforeach
+@else
+<h1>No items to show please add some</h1>
 @endif
 @endsection

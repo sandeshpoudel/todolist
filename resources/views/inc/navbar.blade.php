@@ -15,7 +15,7 @@
                 <li class="{{Request::is('/')? 'active': '' }}">
                     <a href="/">Home</a>
                 </li>
-                <li class="{{Request::is('/todo/create')? 'active' : '' }}">
+                <li class="{{Request::is('todo/create') ? 'active' : '' }}">
                     <a href="/todo/create">Create Todo</a>
                 </li>
             </ul>
